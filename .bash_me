@@ -1,9 +1,4 @@
-
+# bash to vi mode
 set -o vi
 
-xmodmap ~/.Xmodmap
-
-[[ -s ~/.autojump/etc/profile.d/autojump.bash ]] && source ~/.autojump/etc/profile.d/autojump.bash
-
-sl
-
+alias "aws-micro1"="ssh -i /home/kinjyen/.ssh/awskey_micro1.pem ec2-user@ec2-54-245-129-156.us-west-2.compute.amazonaws.com"

@@ -1,5 +1,6 @@
-set ts=4
-set sw=4
+set ts=2
+set sw=2
+set expandtab
 set number
 nnoremap ; :
 nnoremap : ;
@@ -8,6 +9,7 @@ vnoremap : ;
 
 autocmd BufRead *.as set filetype=actionscript
 autocmd BufRead *.mxml set filetype=mxml
+autocmd BufNewFile,BufRead *.less set filetype=less
 syntax on
 
 
@@ -55,3 +57,4 @@ autocmd FileType javascript setlocal textwidth=0
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType less set omnifunc=csscomplete#CompleteCSS
