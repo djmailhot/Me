@@ -1,1 +1,1 @@
-My ever-evolving working environment, with a few treasures in between
+My ever-evolving working environment config files.  Hopefully, these settings remain machine-agnostic.
