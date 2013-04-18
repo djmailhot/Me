@@ -1,14 +1,64 @@
-set ts=2
-set sw=2
+set nocompatible
+set nu
+syntax on
+set wrap
+
+set hlsearch
+set incsearch
+
+set hidden
+
+" next/previous buffer
+noremap <C-S-Tab> :bprev<CR> 
+noremap <C-Tab> :bnext<CR> 
+
+" spacings "
+set backspace=indent,eol,start
+set autoindent
 set expandtab
-set number
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+
+"highlighted columns"
+:set textwidth=80
+highlight ColorColumn ctermbg=7
+let &colorcolumn="81"
+
+set nostartofline
+
+set showcmd
+
+" swap colon/semicolon "
 nnoremap ; :
 nnoremap : ;
 vnoremap ; :
 vnoremap : ;
 
+
+" resize splits w/ ctrl + arrows
+map <C-Down> <C-W>+
+map <C-Up> <C-W>-
+map <C-Left> <C-W><
+map <C-Right> <C-W>>
+
+" ctrl-hjkl to swap splits
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-H> <C-W>h
+map <C-L> <C-W>l
+
+
+let mapleader='f'
+map T :tabnew<Enter>
+map <Leader>[ gT
+map <Leader>] gt
+
+
+" omnicomplete for specific langs "
 autocmd BufRead *.as set filetype=actionscript
 autocmd BufRead *.mxml set filetype=mxml
+autocmd BufRead,BufNewFile *.scala set filetype=scala
 autocmd BufNewFile,BufRead *.less set filetype=less
 syntax on
 
