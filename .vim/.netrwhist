@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/usr/lib/eclipse'
-let g:netrw_dirhist_2='/home/sensei/.vim'
-let g:netrw_dirhist_3='/home/kinjyen/.vim'
+let g:netrw_dirhist_1='/home/kinjyen/505/lec'
+let g:netrw_dirhist_2='/home/kinjyen/.oh-my-zsh'
+let g:netrw_dirhist_3='/home/kinjyen/.ssh'

@@ -1,4 +1,15 @@
+#!/bin/bash
 # bash to vi mode
 set -o vi
 
-alias "aws-micro1"="ssh -i /home/kinjyen/.ssh/awskey_micro1.pem ec2-user@ec2-54-245-129-156.us-west-2.compute.amazonaws.com"
+export AWS_KEY="-i /home/kinjyen/.ssh/awskey_djmailhot.pem"
+export AWS_MICRO="ubuntu@54.212.250.133"
+
+export ATTU="djmail@attu.cs.washington.edu"
+
+alias ssh-awsmicro="ssh $AWS_KEY $AWS_MICRO"
+
+# ROS environment
+source /opt/ros/groovy/setup.zsh
+source ~/Code/ROS/devel/setup.zsh
+export ROS_WORKSPACE="/home/kinjyen/Code/ROS/"

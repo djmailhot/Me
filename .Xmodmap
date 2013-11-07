@@ -1,6 +1,6 @@
 ! xev to check keycodes
 ! --- Reverse Scrolling
-pointer = 1 2 3 5 4 6 7 8 9 10 11 12 13 14 15
+pointer = 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 ! --- Natural Scrolling
 !pointer = 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 
@@ -31,22 +31,23 @@ keycode  64 = Super_L NoSymbol Super_L
 ! LAlt
 keycode 133 = Alt_L Meta_L Alt_L Meta_L
 
-! RAlt
+! RCommand
 !keycode 134 = Alt_R Meta_R Alt_R Meta_R
 keycode 134 = BackSpace BackSpace Delete Delete
 
 ! RShift
 keycode 62 = Return Return Return Return
 
-! ROption
+! RAlt
 !keycode 108 = Menu NoSymbol Menu
 keycode 108 = BackSpace BackSpace Delete Delete
 
 ! Return
-keycode 36 =
+keycode 36 = Return Return Return Return
+!keycode 36 =
 
 ! BackSpace
-keycode 22 =
+keycode 22 = BackSpace BackSpace Delete Delete
 
 !!begin vestigial keys:
 keycode 135 = Super_R NoSymbol Super_R

@@ -44,14 +44,19 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# VIM bindings
+set -o vi
 
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-source .bash_me
+# custom bash settings
+source ~/.bash_me
 
+# custom zsh settings
+source ~/.zsh_me
 
 # Customize to your needs...
 export PATH=$PATH:/home/kinjyen/.rvm/gems/ruby-1.9.3-p374/bin:/home/kinjyen/.rvm/gems/ruby-1.9.3-p374@global/bin:/home/kinjyen/.rvm/rubies/ruby-1.9.3-p374/bin:/home/kinjyen/.rvm/bin:/var/lib/gems/1.8/bin:/usr/local/heroku/bin:/home/kinjyen/.autojump/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/bin:/usr/local/java/bin:/home/kinjyen/.rvm/bin

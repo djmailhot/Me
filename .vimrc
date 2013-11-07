@@ -8,7 +8,10 @@ set incsearch
 
 set hidden
 
-" next/previous buffer
+" paste mode to disable auto formatting "
+set pastetoggle=<F2>
+
+" next/previous buffer "
 noremap <C-S-Tab> :bprev<CR> 
 noremap <C-Tab> :bnext<CR> 
 

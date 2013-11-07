@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+# bind backward history search
+bindkey ^R history-incremental-pattern-search-backward
